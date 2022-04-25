@@ -8,7 +8,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Js -->
-    <script src="./js/main.js" defer></script>
+    <script src="./js/buttonUp.js" defer></script>
+    <script src="./js/menuExpanded.js" defer></script>
+    <script src="./js/tranlateText.js" defer></script>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/f616962a9f.js"
@@ -17,72 +19,95 @@
   </head>
 
   <body>
+    <!-- Main -->
     <main class="main">
+      <!-- Header background -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#5000ca"
-          fill-opacity="1"
-          d="M0,320L30,282.7C60,245,120,171,180,149.3C240,128,300,160,360,186.7C420,213,480,235,540,245.3C600,256,660,256,720,256C780,256,840,256,900,240C960,224,1020,192,1080,154.7C1140,117,1200,75,1260,53.3C1320,32,1380,32,1410,32L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        fill="#5000ca"
+        fill-opacity="1"
+        d="M0,320L30,282.7C60,245,120,171,180,149.3C240,128,300,160,360,186.7C420,213,480,235,540,245.3C600,256,660,256,720,256C780,256,840,256,900,240C960,224,1020,192,1080,154.7C1140,117,1200,75,1260,53.3C1320,32,1380,32,1410,32L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
         ></path>
       </svg>
+      
+      <!-- Navbar -->
       <aside class="navigation collapsed">
         <nav class="navbar">
-          <div class="nav-item">
+         <div class="navbar-top">
+           <div class="navbar-logo"><span>V</span></div>
+           <div class="navbar-hamburguer">
+             <i class="fas fa-bars"></i>
+           </div>
+         </div>
+          <div class="nav-items">
+            <div class="nav-item">
             <a href="/">
               <img src="./public/img/casa.png" alt="home icon" />
               <div class="nav-link-title">
-                <span>Init</span>
+                <span class="nav-init-text">Home</span>
               </div>
             </a>
           </div>
           <div class="nav-item">
-            <a href="/">
+            <a href="#work">
               <img src="./public/img/portafolio.png" alt="portfolio-icon" />
               <div class="nav-link-title">
-                <span>Work</span>
+                <span class="nav-work-text">Work</span>
               </div>
             </a>
           </div>
           <div class="nav-item" id="link">
-            <a href="/">
+            <a href="#links">
               <img src="./public/img/enlace.png" alt="link icon" />
               <div class="nav-link-title">
-                <span>Links</span>
+                <span class="nav-link-text">Links</span>
               </div>
             </a>
           </div>
           <div class="nav-item">
-            <a href="/">
+            <a href="#contact">
               <img src="./public/img/contacto.png" alt="contact icon" />
               <div class="nav-link-title">
-                <span>Contact</span>
+                <span class="nav-contact-text">Contact</span>
               </div>
             </a>
           </div>
+          </div>
         </nav>
       </aside>
-      <div class="expand-button to-expand">
-        <img src="./public/img/expand.png" alt="expand button" />
-      </div>
+      <!-- Principal content -->
       <section class="main-content">
+        <!-- Header -->
         <header class="header">
+        <!-- Tramslate Button -->
+        <div class="translate-button en">
+          <i class="fas fa-language"></i>
+        </div>
           <div class="header-content">
             <img
               src="./public/img/profile-img.jpg"
               alt="profile photo"
               class="profile-photo"
             />
-            <h1>Hello There! I'm Kevin Vega</h1>
+            <h1>
+              <span class="hello">Hello There!, I'm</span>
+              <span class="hello-v">V</span>ega
+            </h1>
             <p class="intro">
               I'm a web developer interested in building modern web sites
             </p>
             <p class="to-my-work">
-              I invite you to know <a href="#work">my work ↓</a>
+              <span class="invite">
+                I invite you to know
+              </span> 
+              <a href="#work" class="my-work">my work ↓</a>
             </p>
           </div>
         </header>
+
+        <!-- Work section -->
         <section class="works" id="work">
-          <h2>WORK</h2>
+          <h2 class="work-title">WORK</h2>
           <article>
             <div class="gallery">
               <div>
@@ -97,7 +122,7 @@
             </div>
             <h3>
               <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen<span> →</span></a
+                >Creciendo desde el origen</a
               >
             </h3>
             <div class="technologies">
@@ -121,7 +146,7 @@
             </div>
             <h3>
               <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen <span> →</span></a
+                >Creciendo desde el origen</a
               >
             </h3>
             <div class="technologies">
@@ -145,7 +170,7 @@
             </div>
             <h3>
               <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen <span> →</span></a
+                >Creciendo desde el origen</a
               >
             </h3>
             <div class="technologies">
@@ -156,14 +181,16 @@
           </article>
           <hr />
         </section>
+
+        <!-- Links section -->
         <section class="links" id="links">
-          <h2>LINKS</h2>
+          <h2 class="links-title">LINKS</h2>
           <article>
             <div class="container left">
               <a href="/"
                 ><img src="./public/img/github.png" alt="Github logo"
-              /></a>
-            </div>
+                /></a>
+              </div>
             <div class="container right">
               <a href="/"
                 ><img src="./public/img/linkedin.png" alt="Linkedin logo"
@@ -171,60 +198,107 @@
             </div>
             <div class="container left">
               <a href="/"
-                ><img src="./public/img/cv.png" alt="Curriculum image"
+              ><img src="./public/img/cv.png" alt="Curriculum image"
               /></a>
             </div>
           </article>
           <hr />
         </section>
+
+        <!-- Contact section -->
         <section class="contact" id="contact">
-          <h2>CONTACT</h2>
+          <h2 class="contact-title">CONTACT</h2>
           <article>
             <form method="post" action="" class="send-mail">
               <div class="form-input">
                 <input type="text" id="name" required />
                 <label>
-                  <span>Name</span>
+                  <span class="name-title">Name</span>
                 </label>
               </div>
               <div class="form-input">
-                <input type="number" id="number" required/>
+                <input type="number" id="number" required />
                 <label>
-                  <span>Phone Number</span>
+                  <span class="phone-title">Phone Number</span>
                 </label>
               </div>
               <div class="form-input">
-                <input type="email" id="email" required/>
+                <input type="email" id="email" required />
                 <label>
-                  <span>Email</span>
+                  <span class="email-title">E-mail</span>
                 </label>
               </div>
               <div class="form-input subject">
-                <textarea name="subject" id="subject" cols="30" rows="10" required></textarea>
+                <textarea
+                  name="subject"
+                  id="subject"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
                 <label>
-                  <span>Subject</span>
+                  <span class="subject-title">Subject</span>
                 </label>
               </div>
+              <input type="submit" value="Send" class="send-button"/>
             </form>
-            <!-- Contact Links -->
-            <div class="contact-links">
-              <a
-                href="https://api.whatsapp.com/send?phone=584241556973&text=Hola,%20soy%20Kevin%20Vega,%20de%20Vega's%20Webs,%20cu%C3%A9ntame%20lo%20que%20necesitas%20/%20Hello%20there,%20I'm%20Kevin%20Vega,%20from%20Vega's%20Webs,%20tell%20me%20what%20do%20you%20need"
-                target="_blank"
-                rel="noreferrer"
-                title="Whatsapp"
-                ><i class="fab fa-whatsapp"></i>
-              </a>
-              <a
-                href="https://t.me/hulkerV"
-                target="_blank"
-                rel="noreferrer"
-                title="Telegram"
-                ><i class="fab fa-telegram-plane"></i>
-              </a>
-            </div>
           </article>
         </section>
+        <div class="button-up-container">
+          <div class="button-up">
+            <span>🠕</span>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+          <div class="footer-sections">
+            <section class="box-footer about">
+              <div class="logo">
+                <h3><span>V</span>ega <span>D</span>ev</h3>
+              </div>
+              <div class="about">
+                <p class="about-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                  facere iusto adipisci doloremque harum aliquam pariatur
+                  doloribus deserunt quo velit nihil dolore
+                </p>
+              </div>
+            </section>
+            <section class="box-footer links-section">
+              <h3 class="f-links-title">Links</h3>
+              <div class="footer-links">
+                <a href=""><i class="fab fa-github"></i> Github</a>
+                <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href=""><i class="fas fa-file-invoice"></i> CV</a>
+              </div>
+            </section>
+            <section class="box-footer contact-section">
+              <h3 class="f-contact-title">Contact</h3>
+              <div class="footer-contact">
+                <a href=""><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                <a href=""><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <span>
+                  <i class="fas fa-envelope"></i> vegat.kevinj@gmail.com
+                </span>
+              </div>
+            </section>
+          </div>
+          <hr />
+          <footer>
+            <section>
+              <p class="rights-text">All rights reserved © 2022 Vega Dev</p>
+            </section>
+            <section>
+              <a href="/" class="f-home-link">Home</a>
+              <span>/</span>
+              <a href="#work" class="f-work-link">Work</a>
+              <span>/</span>
+              <a href="#links" class="f-links-link">Links</a>
+              <span>/</span>
+              <a href="#contact" class="f-contact-link">Contact</a>
+            </section>
+          </footer>
+        </footer>
       </section>
     </main>
   </body>
