@@ -279,6 +279,7 @@ h2 {
 .works h3 {
   margin-top: 30px;
   font-weight: 400;
+  border-radius: 50px;
 }
 
 .footer a {
@@ -291,28 +292,31 @@ h2 {
   color: rgb(110, 23, 240, 0.5);
 }
 
-.works a {
-  padding: 0.5rem 5rem;
-  border-radius: 50px;
-  border: 5px solid rgb(0, 231, 119, 0.5);
-  color: rgb(0, 231, 119, 0.5);
+.works h3:hover {
+  animation: neon-border .5s ease-in-out infinite alternate;
+  -webkit-animation: neon-border .5s ease-in-out infinite alternate;
+  border: none;
 }
 
-.works a:hover {
-  animation: neon .5s ease-in-out infinite alternate;
-  -webkit-animation: neon .5s ease-in-out infinite alternate;
-  border: none;
+.works h3:hover a {
+  animation: neon-text .5s ease-in-out infinite alternate;
+  -webkit-animation: neon-text .5s ease-in-out infinite alternate;
   color: #ffffff;
 }
-
-@keyframes neon {
+@keyframes neon-border {
   0% {
-    box-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
-    text-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+    box-shadow: 0 0 10px #00e777, 0 0 20px #02ae5b, 0 0 30px #016b38;
   }
   100% {
-    box-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
-    text-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+    box-shadow: 0 0 10px #00e777, 0 0 20px #02ae5b, 0 0 30px #016b38;
+  }
+}
+@keyframes neon-text {
+  0% {
+    text-shadow: 0 0 10px #00e777, 0 0 20px #02ae5b, 0 0 30px #016b38;
+  }
+  100% {
+    text-shadow: 0 0 10px #00e777, 0 0 20px #02ae5b, 0 0 30px #016b38;
   }
 }
 
@@ -849,13 +853,14 @@ hr {
   }
 
   .works h3 {
-    font-size: 1.6rem;
+    padding: 5px 0 5px 0;
+    font-size: 1.3rem;
     margin-bottom: 50px;
+    border:  3px solid #00e777;
   }
 
-  .works a::after,
-  .box-footer a::after {
-    background-color: transparent;
+  .works a{
+    color: #00e777;;
   }
 
   .technologies img {
@@ -1176,10 +1181,17 @@ hr {
   }
 
   .works h3 {
+    padding: 5px 20px 5px 20px;
+    margin: 20px auto;
     font-size: 2.5rem;
+    border: 5px solid rgb(0, 231, 119, 0.5);
+    width: fit-content;
   }
 
-  .works a::after,
+  .works a{
+    color: rgb(0, 231, 119, 0.5);
+  }
+
   .box-footer a::after {
     background: #047952;
   }
