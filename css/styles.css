@@ -180,6 +180,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../public/img/wave-haikei.svg");
+  background-size: cover;
+
 }
 
 /* Tranlate Button */
@@ -273,48 +276,44 @@ h2 {
   height: 100%;
 }
 
-.works a,
+.works h3 {
+  margin-top: 30px;
+  font-weight: 400;
+}
+
 .footer a {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
   position: relative;
-  color: #00e777;
+  color: rgb(110, 23, 240, 0.5);
+}
+
+.works a {
+  padding: 0.5rem 5rem;
+  border-radius: 50px;
+  border: 5px solid rgb(0, 231, 119, 0.5);
+  color: rgb(0, 231, 119, 0.5);
 }
 
 .works a:hover {
-  color: #047952;
+  animation: neon .5s ease-in-out infinite alternate;
+  -webkit-animation: neon .5s ease-in-out infinite alternate;
+  border: none;
+  color: #ffffff;
 }
 
-.works a::after,
-.footer .box-footer a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 97%;
-  /*animation*/
-  transform-origin: right;
-  transform: scale(0);
-  transition: transform 0.3s ease-in-out;
-  -webkit-transition: transform 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in-out;
-  -ms-transition: transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  margin-left: 2%;
-}
-
-.works a:hover::after,
-.footer .box-footer a:hover::after {
-  transform-origin: left;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+    text-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+  }
+  100% {
+    box-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+    text-shadow: 0 0 10px #00e777, 0 0 20px #02ca69, 0 0 30px #028f4a;
+  }
 }
 
 hr {
@@ -745,6 +744,34 @@ hr {
   color: #9d6be7;
 }
 
+.footer .box-footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 97%;
+  /*animation*/
+  transform-origin: right;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  margin-left: 2%;
+  background-color: #ffffff;
+}
+
+.footer .box-footer a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
 .footer footer p {
   margin: 0;
   color: #ffffff;
@@ -773,7 +800,6 @@ hr {
   /* Header */
   .profile-photo {
     height: 250px;
-    padding-top: 20px;
   }
 
   .translate-button {
@@ -824,7 +850,7 @@ hr {
 
   .works h3 {
     font-size: 1.6rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .works a::after,
@@ -1129,7 +1155,6 @@ hr {
   /* Header */
   .profile-photo {
     height: 320px;
-    margin-top: 40px;
   }
 
   .translate-button {
@@ -1209,7 +1234,6 @@ hr {
   /* Header */
   .profile-photo {
     height: 340px;
-    margin-top: 10px;
   }
 
   .translate-button {
@@ -1323,7 +1347,7 @@ hr {
     height: 200px;
   }
 
-  .container::before{
+  .container::before {
     width: 25%;
   }
 }
