@@ -366,6 +366,10 @@ body.dark .header a {
   color: var(--secondary-green);
 }
 
+body.dark .header a:hover {
+  color: var(--main-green);
+}
+
 /* Work Section */
 h2 {
   font-weight: 300;
@@ -1583,7 +1587,7 @@ body.dark .footer footer p {
   .box-footer:first-of-type {
     width: 35%;
   }
-  
+
   .box-footer:last-of-type {
     width: 33%;
   }
