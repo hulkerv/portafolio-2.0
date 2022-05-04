@@ -11,6 +11,7 @@
     <script src="./js/buttonUp.js" defer></script>
     <script src="./js/menuExpanded.js" defer></script>
     <script src="./js/tranlateText.js" defer></script>
+    <script src="./js/darkModeSwitch.js" defer></script>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/f616962a9f.js"
@@ -20,275 +21,285 @@
 
   <body>
     <!-- Main -->
-    <main class="main">      
+    <main class="main">
       <!-- Navbar -->
       <aside class="navigation collapsed">
         <nav class="navbar">
-         <div class="navbar-top">
-           <div class="navbar-logo"><span>V</span></div>
-           <div class="navbar-hamburguer">
-             <i class="fas fa-bars"></i>
-           </div>
-         </div>
+          <div class="navbar-top">
+            <div class="navbar-logo"><span>V</span></div>
+            <div class="navbar-hamburguer">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
           <div class="nav-items">
             <div class="nav-item">
-            <a href="/">
-              <img src="./public/img/casa.png" alt="home icon" />
-              <div class="nav-link-title">
-                <span class="nav-init-text">Home</span>
-              </div>
-            </a>
-          </div>
-          <div class="nav-item">
-            <a href="#work">
-              <img src="./public/img/portafolio.png" alt="portfolio-icon" />
-              <div class="nav-link-title">
-                <span class="nav-work-text">Work</span>
-              </div>
-            </a>
-          </div>
-          <div class="nav-item" id="link">
-            <a href="#links">
-              <img src="./public/img/enlace.png" alt="link icon" />
-              <div class="nav-link-title">
-                <span class="nav-link-text">Links</span>
-              </div>
-            </a>
-          </div>
-          <div class="nav-item">
-            <a href="#contact">
-              <img src="./public/img/contacto.png" alt="contact icon" />
-              <div class="nav-link-title">
-                <span class="nav-contact-text">Contact</span>
-              </div>
-            </a>
-          </div>
+              <a href="/">
+                <img src="./public/img/casa.png" alt="home icon" />
+                <div class="nav-link-title">
+                  <span class="nav-init-text">Home</span>
+                </div>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="#work">
+                <img src="./public/img/portafolio.png" alt="portfolio-icon" />
+                <div class="nav-link-title">
+                  <span class="nav-work-text">Work</span>
+                </div>
+              </a>
+            </div>
+            <div class="nav-item" id="link">
+              <a href="#links">
+                <img src="./public/img/enlace.png" alt="link icon" />
+                <div class="nav-link-title">
+                  <span class="nav-link-text">Links</span>
+                </div>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="#contact">
+                <img src="./public/img/contacto.png" alt="contact icon" />
+                <div class="nav-link-title">
+                  <span class="nav-contact-text">Contact</span>
+                </div>
+              </a>
+            </div>
           </div>
         </nav>
       </aside>
-        <!-- Header -->
-        <header class="header">
+      <!-- Header -->
+      <header class="header">
+
+        <!-- darkmode button -->
+        <div class="switch-container">
+          <button class="switch">
+            <span><i class="fas fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+          </button>
+        </div>
+
         <!-- Tramslate Button -->
         <div class="translate-button en">
           <i class="fas fa-language"></i>
         </div>
-          <div class="header-content">
-            <img
-              src="./public/img/profile-img.jpg"
-              alt="profile photo"
-              class="profile-photo"
-            />
-            <h1>
-              <span class="hello">Hello There!, I'm</span>
-              <span class="hello-v">V</span>ega
-            </h1>
-            <p class="intro">
-              I'm a web developer interested in building modern web sites
-            </p>
-            <p class="to-my-work">
-              <span class="invite">
-                I invite you to know
-              </span> 
-              <br class="my-work-br">
-              <a href="#work" class="my-work">my work <br class="my-work-br"> ↓</a>
-            </p>
-          </div>
-        </header>
-
-        <!-- Work section -->
-        <section class="works" id="work">
-          <h2 class="work-title">WORK</h2>
-          <article>
-            <div class="gallery">
-              <div>
-                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
-              </div>
-            </div>
-            <h3>
-              <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen</a
-              >
-            </h3>
-            <div class="technologies">
-              <img src="./public/img/html-5.png" alt="html logo" />
-              <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-              <img src="./public/img/js.png" alt="JavaScript logo" />
-            </div>
-          </article>
-          <hr />
-          <article>
-            <div class="gallery">
-              <div>
-                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
-              </div>
-            </div>
-            <h3>
-              <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen</a
-              >
-            </h3>
-            <div class="technologies">
-              <img src="./public/img/html-5.png" alt="html logo" />
-              <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-              <img src="./public/img/js.png" alt="JavaScript logo" />
-            </div>
-          </article>
-          <hr />
-          <article>
-            <div class="gallery">
-              <div>
-                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
-              </div>
-              <div>
-                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
-              </div>
-            </div>
-            <h3>
-              <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen</a
-              >
-            </h3>
-            <div class="technologies">
-              <img src="./public/img/html-5.png" alt="html logo" />
-              <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-              <img src="./public/img/js.png" alt="JavaScript logo" />
-            </div>
-          </article>
-          <hr />
-        </section>
-
-        <!-- Links section -->
-        <section class="links" id="links">
-          <h2 class="links-title">LINKS</h2>
-          <article>
-            <div class="container left">
-              <a href="/"
-                ><img src="./public/img/github.png" alt="Github logo"
-                /></a>
-              </div>
-            <div class="container right">
-              <a href="/"
-                ><img src="./public/img/linkedin.png" alt="Linkedin logo"
-              /></a>
-            </div>
-            <div class="container left">
-              <a href="/"
-              ><img src="./public/img/cv.png" alt="Curriculum image"
-              /></a>
-            </div>
-          </article>
-          <hr />
-        </section>
-
-        <!-- Contact section -->
-        <section class="contact" id="contact">
-          <h2 class="contact-title">CONTACT</h2>
-          <article>
-            <form method="post" action="" class="send-mail">
-              <div class="form-input">
-                <input type="text" id="name" required />
-                <label>
-                  <span class="name-title">Name</span>
-                </label>
-              </div>
-              <div class="form-input">
-                <input type="number" id="number" required />
-                <label>
-                  <span class="phone-title">Phone Number</span>
-                </label>
-              </div>
-              <div class="form-input">
-                <input type="email" id="email" required />
-                <label>
-                  <span class="email-title">E-mail</span>
-                </label>
-              </div>
-              <div class="form-input subject">
-                <textarea
-                  name="subject"
-                  id="subject"
-                  cols="30"
-                  rows="10"
-                  required
-                ></textarea>
-                <label>
-                  <span class="subject-title">Subject</span>
-                </label>
-              </div>
-              <input type="submit" value="Send" class="send-button"/>
-            </form>
-          </article>
-        </section>
-        <div class="button-up-container">
-          <div class="button-up">
-            <span>🠕</span>
-          </div>
+        <div class="header-content">
+          <img
+            src="./public/img/profile-img.jpg"
+            alt="profile photo"
+            class="profile-photo"
+          />
+          <h1>
+            <span class="hello">Hello There!, I'm</span>
+            <span class="hello-v">V</span>ega
+          </h1>
+          <p class="intro">
+            I'm a web developer interested in building modern web sites
+          </p>
+          <p class="to-my-work">
+            <span class="invite"> I invite you to know </span>
+            <br class="my-work-br" />
+            <a href="#work" class="my-work"
+              >my work <br class="my-work-br" />
+              ↓</a
+            >
+          </p>
         </div>
-        <!-- Footer -->
-        <footer class="footer" id="footer">
-          <div class="footer-sections">
-            <section class="box-footer about">
-              <div class="logo">
-                <h3><span>V</span>ega <span>D</span>ev</h3>
-              </div>
-              <div class="about">
-                <p class="about-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  facere iusto adipisci doloremque harum aliquam pariatur
-                  doloribus deserunt quo velit nihil dolore
-                </p>
-              </div>
-            </section>
-            <section class="box-footer links-section">
-              <h3 class="f-links-title">Links</h3>
-              <div class="footer-links">
-                <a href=""><i class="fab fa-github"></i> Github</a>
-                <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
-                <a href=""><i class="fas fa-file-invoice"></i> CV</a>
-              </div>
-            </section>
-            <section class="box-footer contact-section">
-              <h3 class="f-contact-title">Contact</h3>
-              <div class="footer-contact">
-                <a href=""><i class="fab fa-whatsapp"></i> Whatsapp</a>
-                <a href=""><i class="fab fa-telegram-plane"></i> Telegram</a>
-                <span>
-                  <i class="fas fa-envelope"></i> vegat.kevinj@gmail.com
-                </span>
-              </div>
-            </section>
+      </header>
+
+      <!-- Work section -->
+      <section class="works" id="work">
+        <h2 class="work-title">WORK</h2>
+        <article>
+          <div class="gallery">
+            <div>
+              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+            </div>
           </div>
-          <hr />
-          <footer>
-            <section>
-              <p class="rights-text">All rights reserved © 2022 Vega Dev</p>
-            </section>
-            <section>
-              <a href="/" class="f-home-link">Home</a>
-              <span>/</span>
-              <a href="#work" class="f-work-link">Work</a>
-              <span>/</span>
-              <a href="#links" class="f-links-link">Links</a>
-              <span>/</span>
-              <a href="#contact" class="f-contact-link">Contact</a>
-            </section>
-          </footer>
+          <h3>
+            <a href="https://creciendodesdeelorigen.com/" target="_blank"
+              >Creciendo desde el origen</a
+            >
+          </h3>
+          <div class="technologies">
+            <img src="./public/img/html-5.png" alt="html logo" />
+            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
+            <img src="./public/img/js.png" alt="JavaScript logo" />
+          </div>
+        </article>
+        <hr />
+        <article>
+          <div class="gallery">
+            <div>
+              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+            </div>
+          </div>
+          <h3>
+            <a href="https://creciendodesdeelorigen.com/" target="_blank"
+              >Creciendo desde el origen</a
+            >
+          </h3>
+          <div class="technologies">
+            <img src="./public/img/html-5.png" alt="html logo" />
+            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
+            <img src="./public/img/js.png" alt="JavaScript logo" />
+          </div>
+        </article>
+        <hr />
+        <article>
+          <div class="gallery">
+            <div>
+              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            </div>
+            <div>
+              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+            </div>
+          </div>
+          <h3>
+            <a href="https://creciendodesdeelorigen.com/" target="_blank"
+              >Creciendo desde el origen</a
+            >
+          </h3>
+          <div class="technologies">
+            <img src="./public/img/html-5.png" alt="html logo" />
+            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
+            <img src="./public/img/js.png" alt="JavaScript logo" />
+          </div>
+        </article>
+        <hr />
+      </section>
+
+      <!-- Links section -->
+      <section class="links" id="links">
+        <h2 class="links-title">LINKS</h2>
+        <article>
+          <div class="container left">
+            <a href="/"
+              ><img src="./public/img/github.png" alt="Github logo"
+            /></a>
+          </div>
+          <div class="container right">
+            <a href="/"
+              ><img src="./public/img/linkedin.png" alt="Linkedin logo"
+            /></a>
+          </div>
+          <div class="container left">
+            <a href="/"
+              ><img src="./public/img/cv.png" alt="Curriculum image"
+            /></a>
+          </div>
+        </article>
+        <hr />
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact" id="contact">
+        <h2 class="contact-title">CONTACT</h2>
+        <article>
+          <form method="post" action="" class="send-mail">
+            <div class="form-input">
+              <input type="text" id="name" required />
+              <label>
+                <span class="name-title">Name</span>
+              </label>
+            </div>
+            <div class="form-input">
+              <input type="number" id="number" required />
+              <label>
+                <span class="phone-title">Phone Number</span>
+              </label>
+            </div>
+            <div class="form-input">
+              <input type="email" id="email" required />
+              <label>
+                <span class="email-title">E-mail</span>
+              </label>
+            </div>
+            <div class="form-input subject">
+              <textarea
+                name="subject"
+                id="subject"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+              <label>
+                <span class="subject-title">Subject</span>
+              </label>
+            </div>
+            <input type="submit" value="Send" class="send-button" />
+          </form>
+        </article>
+      </section>
+      <div class="button-up-container">
+        <div class="button-up">
+          <span>🠕</span>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer" id="footer">
+        <div class="footer-sections">
+          <section class="box-footer about">
+            <div class="logo">
+              <h3><span>V</span>ega <span>D</span>ev</h3>
+            </div>
+            <div class="about">
+              <p class="about-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+                facere iusto adipisci doloremque harum aliquam pariatur
+                doloribus deserunt quo velit nihil dolore
+              </p>
+            </div>
+          </section>
+          <section class="box-footer links-section">
+            <h3 class="f-links-title">Links</h3>
+            <div class="footer-links">
+              <a href=""><i class="fab fa-github"></i> Github</a>
+              <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
+              <a href=""><i class="fas fa-file-invoice"></i> CV</a>
+            </div>
+          </section>
+          <section class="box-footer contact-section">
+            <h3 class="f-contact-title">Contact</h3>
+            <div class="footer-contact">
+              <a href=""><i class="fab fa-whatsapp"></i> Whatsapp</a>
+              <a href=""><i class="fab fa-telegram-plane"></i> Telegram</a>
+              <span>
+                <i class="fas fa-envelope"></i> vegat.kevinj@gmail.com
+              </span>
+            </div>
+          </section>
+        </div>
+        <hr />
+        <footer>
+          <section>
+            <p class="rights-text">All rights reserved © 2022 Vega Dev</p>
+          </section>
+          <section>
+            <a href="/" class="f-home-link">Home</a>
+            <span>/</span>
+            <a href="#work" class="f-work-link">Work</a>
+            <span>/</span>
+            <a href="#links" class="f-links-link">Links</a>
+            <span>/</span>
+            <a href="#contact" class="f-contact-link">Contact</a>
+          </section>
         </footer>
+      </footer>
     </main>
   </body>
 </html>

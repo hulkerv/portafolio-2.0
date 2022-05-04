@@ -68,8 +68,8 @@ const elements = {
 const translateButton = document.querySelector(".translate-button");
 
 translateButton.addEventListener("click", () => {
+  translateButton.classList.toggle("en");
   if (translateButton.classList.contains("en")) {
-    translateButton.classList.remove("en");
     elements.navInitText.textContent = text.spanish.navInitText;
     elements.navWorkText.textContent = text.spanish.navWorkText;
     elements.navLinksText.textContent = text.spanish.navLinksText;
@@ -95,7 +95,6 @@ translateButton.addEventListener("click", () => {
     elements.fLinksLink.textContent = text.spanish.navLinksText;
     elements.fContactLink.textContent = text.spanish.navContactText;
   } else {
-    translateButton.classList.add("en");
     elements.navInitText.textContent = text.english.navInitText;
     elements.navWorkText.textContent = text.english.navWorkText;
     elements.navLinksText.textContent = text.english.navLinksText;
