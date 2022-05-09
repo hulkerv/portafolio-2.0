@@ -20,10 +20,8 @@
   </head>
 
   <body>
-
     <!-- Main -->
     <main class="main">
-      
       <!-- Navbar -->
       <aside class="navigation collapsed">
         <nav class="navbar">
@@ -60,7 +58,9 @@
             </div>
             <div class="nav-item">
               <a href="#contact">
-                <span class="span-icon"><i class="fas fa-address-book"></i></span>
+                <span class="span-icon"
+                  ><i class="fas fa-address-book"></i
+                ></span>
                 <div class="nav-link-title">
                   <span class="nav-contact-text">Contact</span>
                 </div>
@@ -72,7 +72,6 @@
 
       <!-- Header -->
       <header class="header">
-
         <!-- darkmode button -->
         <div class="switch-container">
           <button class="switch">
@@ -113,17 +112,27 @@
       <section class="works" id="work">
         <h2 class="work-title">WORK <i class="fas fa-briefcase"></i></h2>
         <article>
-          <div class="gallery">
-            <div>
-              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+          <section class="slider middle">
+            <div class="slides">
+              <input type="radio" name="r" id="r1" checked />
+              <input type="radio" name="r" id="r2" />
+              <input type="radio" name="r" id="r3" />
+              <div class="slide s1">
+                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+              </div>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            <div class="slide-navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
-            </div>
-          </div>
+          </section>
           <h3>
             <a href="https://creciendodesdeelorigen.com/" target="_blank"
               >Creciendo desde el origen</a
@@ -137,17 +146,27 @@
         </article>
         <hr />
         <article>
-          <div class="gallery">
-            <div>
-              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+          <section class="slider middle">
+            <div class="slides">
+              <input type="radio" name="r" id="r4" checked />
+              <input type="radio" name="r" id="r5" />
+              <input type="radio" name="r" id="r6" />
+              <div class="slide s2">
+                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+              </div>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            <div class="slide-navigation">
+              <label for="r4" class="bar"></label>
+              <label for="r5" class="bar"></label>
+              <label for="r6" class="bar"></label>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
-            </div>
-          </div>
+          </section>
           <h3>
             <a href="https://creciendodesdeelorigen.com/" target="_blank"
               >Creciendo desde el origen</a
@@ -160,27 +179,39 @@
           </div>
         </article>
         <hr />
-        <article>
-          <div class="gallery">
-            <div>
-              <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+        <article class="work-card">
+          <section class="slider middle">
+            <div class="slides">
+              <input type="radio" name="r" id="r7" checked />
+              <input type="radio" name="r" id="r8" />
+              <input type="radio" name="r" id="r9" />
+              <div class="slide s3">
+                <img src="./public/img/creciendodesdeelorigen1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+              </div>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen2.jpg" alt="" />
+            <div class="slide-navigation">
+              <label for="r7" class="bar"></label>
+              <label for="r8" class="bar"></label>
+              <label for="r9" class="bar"></label>
             </div>
-            <div>
-              <img src="./public/img/creciendodesdeelorigen3.jpg" alt="" />
+          </section>
+          <div class="card-info">
+            <h3>
+              <a href="https://creciendodesdeelorigen.com/" target="_blank"
+                >Creciendo desde el origen</a
+              >
+            </h3>
+            <div class="technologies">
+              <img src="./public/img/html-5.png" alt="html logo" />
+              <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
+              <img src="./public/img/js.png" alt="JavaScript logo" />
             </div>
-          </div>
-          <h3>
-            <a href="https://creciendodesdeelorigen.com/" target="_blank"
-              >Creciendo desde el origen</a
-            >
-          </h3>
-          <div class="technologies">
-            <img src="./public/img/html-5.png" alt="html logo" />
-            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-            <img src="./public/img/js.png" alt="JavaScript logo" />
           </div>
         </article>
         <hr />
@@ -211,40 +242,44 @@
 
       <!-- Contact section -->
       <section class="contact" id="contact">
-        <h2 class="contact-title">CONTACT <i class="fas fa-address-book"></i></h2>
+        <h2 class="contact-title">
+          CONTACT <i class="fas fa-address-book"></i>
+        </h2>
         <article>
-          <form method="post" action="" class="send-mail">
+          <form method="POST" action="/send-email" class="send-mail">
             <div class="form-input">
-              <input type="text" id="name" required />
+              <input type="text" id="name" name="name" required />
               <label>
                 <span class="name-title">Name</span>
               </label>
             </div>
             <div class="form-input">
-              <input type="number" id="number" required />
-              <label>
-                <span class="phone-title">Phone Number</span>
-              </label>
-            </div>
-            <div class="form-input">
-              <input type="email" id="email" required />
+              <input type="email" id="email" name="email" required />
               <label>
                 <span class="email-title">E-mail</span>
               </label>
             </div>
-            <div class="form-input subject">
+            <div class="form-input">
+              <input type="text" id="subject" name="subject" required />
+              <label>
+                <span class="subject-title">Subject</span>
+              </label>
+            </div>
+            <div class="form-input message">
               <textarea
-                name="subject"
-                id="subject"
+                name="message"
+                id="message"
                 cols="30"
                 rows="10"
                 required
               ></textarea>
               <label>
-                <span class="subject-title">Subject</span>
+                <span class="message-title">Message</span>
               </label>
             </div>
-            <input type="submit" value="Send" class="send-button" />
+            <button class="send-button">
+              Send
+            </button>
           </form>
         </article>
       </section>
