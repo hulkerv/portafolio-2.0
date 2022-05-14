@@ -17,6 +17,13 @@
       src="https://kit.fontawesome.com/f616962a9f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Animated -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Captcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lce0eQfAAAAALhi8xSPSkaOtk5g4UXhdA_AXvUf"></script>
   </head>
 
   <body>
@@ -34,7 +41,7 @@
           <div class="nav-items">
             <div class="nav-item">
               <a href="/">
-                <span class="span-icon"><i class="fas fa-home"></i></span>
+                <span class="nav-icon"><i class="fas fa-home"></i></span>
                 <div class="nav-link-title">
                   <span class="nav-init-text">Home</span>
                 </div>
@@ -42,7 +49,7 @@
             </div>
             <div class="nav-item">
               <a href="#work">
-                <span class="span-icon"><i class="fas fa-briefcase"></i></span>
+                <span class="nav-icon"><i class="fas fa-briefcase"></i></span>
                 <div class="nav-link-title">
                   <span class="nav-work-text">Work</span>
                 </div>
@@ -50,7 +57,7 @@
             </div>
             <div class="nav-item" id="link">
               <a href="#links">
-                <span class="span-icon"><i class="fas fa-link"></i></span>
+                <span class="nav-icon"><i class="fas fa-link"></i></span>
                 <div class="nav-link-title">
                   <span class="nav-link-text">Links</span>
                 </div>
@@ -58,7 +65,7 @@
             </div>
             <div class="nav-item">
               <a href="#contact">
-                <span class="span-icon"
+                <span class="nav-icon"
                   ><i class="fas fa-address-book"></i
                 ></span>
                 <div class="nav-link-title">
@@ -81,7 +88,7 @@
         </div>
 
         <!-- Tramslate Button -->
-        <div class="translate-button en">
+        <div class="translate-button">
           <i class="fas fa-language"></i>
         </div>
         <div class="header-content">
@@ -97,21 +104,31 @@
           <p class="intro">
             I'm a web developer interested in building modern web sites
           </p>
-          <p class="to-my-work">
-            <span class="invite"> I invite you to know </span>
-            <br class="my-work-br" />
-            <a href="#work" class="my-work"
-              >my work <br class="my-work-br" />
-              ↓</a
-            >
-          </p>
+          <p class="invite">I invite you to know my work</p>
+          <a href="#work" class="to-my-work"
+            ><i class="fas fa-arrow-down"></i
+          ></a>
         </div>
       </header>
 
       <!-- Work section -->
-      <section class="works" id="work">
-        <h2 class="work-title">WORK <i class="fas fa-briefcase"></i></h2>
-        <article>
+      <section class="section works" id="work">
+        <article class="work-card">
+          <section class="work-info">
+            <h3 class="work-title">creciendodesdeelorigen.com</h3>
+            <p class="work-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium sit vero, sequi fugiat tempora nam.
+            </p>
+            <div class="technologies">
+              <img src="./public/img/html-5.png" alt="" />
+              <img src="./public/img/bootstrap.png" alt="" />
+              <img src="./public/img/js.png" alt="" />
+            </div>
+            <a href="https://creciendodesdeelorigen.com/" class="proyect-link"
+              >See proyect</a
+            >
+          </section>
           <section class="slider middle">
             <div class="slides">
               <input type="radio" name="r" id="r1" checked />
@@ -133,19 +150,28 @@
               <label for="r3" class="bar"></label>
             </div>
           </section>
-          <h3>
-            <a href="https://creciendodesdeelorigen.com/" target="_blank"
-              >Creciendo desde el origen</a
-            >
-          </h3>
-          <div class="technologies">
-            <img src="./public/img/html-5.png" alt="html logo" />
-            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-            <img src="./public/img/js.png" alt="JavaScript logo" />
-          </div>
         </article>
-        <hr />
-        <article>
+        <article class="work-card">
+          <section class="work-info">
+            <h3 class="work-title">creciendodesdeelorigen.com</h3>
+            <p class="work-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium sit vero, sequi fugiat tempora nam.
+            </p>
+            <div class="technologies">
+              <img src="./public/img/html-5.png" alt="" />
+              <img src="./public/img/bootstrap.png" alt="" />
+              <img src="./public/img/js.png" alt="" />
+            </div>
+            <div class="work-links">
+              <a href="" class="proyect-link code-link"
+                ><i class="fab fa-github"></i> See code</a
+              >
+              <a href="https://creciendodesdeelorigen.com/" class="proyect-link"
+                >See proyect</a
+              >
+            </div>
+          </section>
           <section class="slider middle">
             <div class="slides">
               <input type="radio" name="r" id="r4" checked />
@@ -167,19 +193,28 @@
               <label for="r6" class="bar"></label>
             </div>
           </section>
-          <h3>
-            <a href="https://creciendodesdeelorigen.com/" target="_blank"
-              >Creciendo desde el origen</a
-            >
-          </h3>
-          <div class="technologies">
-            <img src="./public/img/html-5.png" alt="html logo" />
-            <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-            <img src="./public/img/js.png" alt="JavaScript logo" />
-          </div>
         </article>
-        <hr />
         <article class="work-card">
+          <section class="work-info">
+            <h3 class="work-title">creciendodesdeelorigen.com</h3>
+            <p class="work-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium sit vero, sequi fugiat tempora nam.
+            </p>
+            <div class="technologies">
+              <img src="./public/img/html-5.png" alt="" />
+              <img src="./public/img/bootstrap.png" alt="" />
+              <img src="./public/img/js.png" alt="" />
+            </div>
+            <div class="work-links">
+              <a href="" class="proyect-link code-link"
+                ><i class="fab fa-github"></i> See code</a
+              >
+              <a href="https://creciendodesdeelorigen.com/" class="proyect-link"
+                >See proyect</a
+              >
+            </div>
+          </section>
           <section class="slider middle">
             <div class="slides">
               <input type="radio" name="r" id="r7" checked />
@@ -201,25 +236,15 @@
               <label for="r9" class="bar"></label>
             </div>
           </section>
-          <div class="card-info">
-            <h3>
-              <a href="https://creciendodesdeelorigen.com/" target="_blank"
-                >Creciendo desde el origen</a
-              >
-            </h3>
-            <div class="technologies">
-              <img src="./public/img/html-5.png" alt="html logo" />
-              <img src="./public/img/bootstrap.png" alt="bootstrap logo" />
-              <img src="./public/img/js.png" alt="JavaScript logo" />
-            </div>
-          </div>
         </article>
-        <hr />
+        <!-- <hr /> -->
       </section>
 
       <!-- Links section -->
-      <section class="links" id="links">
-        <h2 class="links-title">LINKS <i class="fas fa-link"></i></h2>
+      <section class="section links" id="links">
+        <h2 class="section-title">
+          <span class="links-title">Know my skills . . .</span>
+        </h2>
         <article>
           <div class="container left">
             <a href="/"
@@ -237,30 +262,41 @@
             /></a>
           </div>
         </article>
-        <hr />
+        <!-- <hr /> -->
       </section>
-
+  
       <!-- Contact section -->
-      <section class="contact" id="contact">
-        <h2 class="contact-title">
-          CONTACT <i class="fas fa-address-book"></i>
+      <section class="section contact" id="contact">
+        <h2 class="section-title">
+          <span class="contact-title">Contact to me . . .</span>
         </h2>
         <article>
-          <form method="POST" action="/send-email" class="send-mail">
+          <form
+            method="POST"
+            action="/send-email"
+            class="send-mail"
+            id="contactForm"
+          >
             <div class="form-input">
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" id="name" required />
               <label>
                 <span class="name-title">Name</span>
               </label>
             </div>
             <div class="form-input">
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" id="email" required />
               <label>
                 <span class="email-title">E-mail</span>
               </label>
             </div>
             <div class="form-input">
-              <input type="text" id="subject" name="subject" required />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                id="subject"
+                required
+              />
               <label>
                 <span class="subject-title">Subject</span>
               </label>
@@ -271,19 +307,18 @@
                 id="message"
                 cols="30"
                 rows="10"
+                id="message"
                 required
               ></textarea>
               <label>
                 <span class="message-title">Message</span>
               </label>
             </div>
-            <button class="send-button">
-              Send
-            </button>
+            <button class="send-button">Send</button>
           </form>
         </article>
       </section>
-
+      
       <!-- Button up -->
       <div class="button-up-container">
         <div class="button-up">
@@ -342,5 +377,52 @@
         </footer>
       </footer>
     </main>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", runVerify);
+
+      function runVerify(e) {
+        e.preventDefault();
+        runCaptcha();
+      }
+
+      function runCaptcha() {
+        grecaptcha
+          .execute("6Lce0eQfAAAAALhi8xSPSkaOtk5g4UXhdA_AXvUf", {
+            action: "submit",
+          })
+          .then(function (token) {
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const subject = document.getElementById("subject");
+            const message = document.getElementById("message");
+            const captcha = token;
+            sendData(name, email, subject, message, captcha);
+          });
+      }
+
+      function sendData(name, email, subject, message, captcha) {
+        const info = JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+          captcha: captcha,
+        });
+
+        fetch('/send-mail', {
+          method:'POST',
+          headers:{
+            'Accept':'aplication/json, text/plain, */*',
+            'Content-type': 'application/json'
+          },
+          body:info
+        }).then(res => res.json())
+        .then(data=>{
+          alert(`msg: ${data.msg}, score ${data.score}`)
+        })
+      }
+    </script>
   </body>
 </html>
