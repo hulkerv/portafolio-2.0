@@ -1,5 +1,4 @@
 //Button Up
-
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 500) {
     document.querySelector(".button-up-container").classList.add("show");
