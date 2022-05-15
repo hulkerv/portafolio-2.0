@@ -1,7 +1,8 @@
 const { Router } = require("express");
 const router = Router();
 const request = require("request");
-const secretKey = "6Lce0eQfAAAAAEtAXf-UE5xFeApwgHldHoQ8T8Bs";
+require('dotenv').config()
+const secretKey = process.env.CAPTCHA_SECRET_KEY;
 
 router.post("/send-mail", (req, res) => {
   const { captcha } = req.body;
